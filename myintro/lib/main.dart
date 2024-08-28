@@ -10,10 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
+            backgroundColor: Colors.green,
             body: Center(
-      child: Text(
-          "NAME: Syed Azam Taji\nSKILL: Dart Developer\nHOBBIES: Playing Cricket \nPROFESSION: Developer"),
-    )));
+              child: Text(
+                "NAME: Syed Azam Taji\nSKILL: Dart Developer\nHOBBIES: Playing Cricket \nPROFESSION: Developer",
+                style: TextStyle(color: Colors.yellow, fontSize: 30.0),
+              ),
+            )));
   }
 }
